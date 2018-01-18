@@ -1,0 +1,85 @@
+.hero-image {
+  width: 100%;
+}
+
+.hero-image img {
+  width: 100%;
+}
+
+.project-description {
+  margin: 0;
+  min-height: 500px;
+  padding: 48px 40px;
+  position: relative;
+  margin: 0 auto;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.project-description .heading, .project .paragraph {
+  margin-left: 2%;
+}
+
+.bottom-navigation {
+  display: flex;
+  align-items: center;
+  width: 250px;
+  padding: 24px 0;
+  margin-left: 2%;
+  position: absolute;
+  bottom: 48px;
+}
+
+.bottom-navigation a {
+  text-decoration: none;
+  color: black;
+}
+
+.navigational-table {
+  width: 100%;
+  margin-left: 2%;
+  padding: 4% 0;
+}
+
+.navigational-table .table-name {
+  padding-bottom: 8px;
+}
+
+.table-name span {
+  border-bottom: 1px solid black;
+}
+
+.navigational-table td {
+  padding: 10px 0;
+}
+
+.navigational-table .title {
+  min-width: 600px;
+}
+
+.navigational-table a {
+  text-decoration: none;
+}
+
+.next-link {
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.next-link span {
+  margin-left: 8px;
+  width: 18px;
+  height: 18px;
+}
+
+.next-link span svg {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .bottom-navigation {
+    bottom: 0;
+  }
+}
