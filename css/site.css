@@ -22,7 +22,7 @@ body {
 }
 
  .name-logo {
-  background: url(../images/sasha-burchuk-header.png) center center no-repeat;
+  background: url(../assets/sasha-burchuk-header.png) center center no-repeat;
   margin-right: 24px;
   height: 50px;
   width: 350px;
@@ -63,57 +63,8 @@ body {
   margin-bottom: 2%;
 }
 
-.intro {
-  z-index: 0;
-  width: 100%;
-  /*height: 100%;*/
-  /*min-height: 100vh;*/
-  min-height: 25vh;
-  min-width: 100vw;
-  opacity: 1;
-  top: 0;
-  left: 0;
-  /*background: #FFD0F2;*/
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/*.intro a {
-  font-family: 'Open Sans', sans-serif;
-  display: block;
-  position: absolute;
-  bottom: 40px;
-  left: 50%;
-  margin-left: -79px;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 10px 40px;
-  border: 2px solid rgba(0,0,0,0.78);
-  color: rgba(0,0,0,0.78);
-  text-decoration: none;
-  transition: background 100ms, color 550ms, border 550ms, ease-in-out;
-  transition: background 100ms, color 550ms, border 550ms, ease-in-out;
-}
-
-.intro a:hover {
-  background: aquamarine;
-  border: 2px solid #5830F0;
-  color: #5830F0;
-  transition: background 100ms, color 550ms, border 550ms, ease-in-out;
-  transition: background 100ms, color 550ms, border 550ms, ease-in-out;
-}*/
-
-.intro p {
-  margin: 0;
-  margin-top: 8px;
-  font-size: 20px;
-}
-
 .flex-center {
   width: 100%;
-  /*height: 100%;
-  min-height: 100vh;*/
   min-width: 100vw;
   opacity: 1;
   top: 0;
@@ -137,6 +88,28 @@ li  a {
     text-decoration: none;
 }
 
+.intro {
+  z-index: 0;
+  width: 100%;
+  /*height: 100%;*/
+  /*min-height: 100vh;*/
+  min-height: 25vh;
+  min-width: 100vw;
+  opacity: 1;
+  top: 0;
+  left: 0;
+  /*background: #FFD0F2;*/
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro p {
+  margin: 0;
+  margin-top: 8px;
+  font-size: 20px;
+}
+
 
 .section-container {
   min-height: 500px;
@@ -149,7 +122,7 @@ li  a {
   width: 100%;
 }
 
-.container .heading, .container .paragraph {
+.container .heading, .container .paragraph, .details {
   margin-left: 2%;
 }
 
@@ -255,17 +228,90 @@ a, a:visited {
 
 /* about page */
 
-.headshot {
+.home-button {
+  text-align: center;
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.p-o-t-shutter .home-button {
+  color: #ffd6f6;;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.4);
+}
+
+.p-o-t-cabinet .home-button {
+  color:#ff1d1d;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.4);
+}
+
+.se-ash .home-button {
+  color: #8b1bff;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.4);
+}
+
+.gemstone-terrazzo .home-button {
+  color: #00b8ff;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.4);
+}
+
+.rancho-relaxo .home-button {
+  color: #f17eff;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.4);
+}
+
+.stools .home-button {
+  color: #ffd6f6;;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.4);
+}
+
+.marble .home-button {
+  color: #00b8ff;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.4);
+}
+
+
+.details {
+  line-height: 1.5;
+  float: left;
+  margin-bottom: 40px;
+}
+
+.details span {
   display: block;
+}
+
+.headshot {
+  display: inline-block;
   height: 260px;
-  margin-left: 46%;
+  margin-right: 26%;
   margin-top: 70px;
   width: 260px;
+  float: right;
 }
 
 .headshot img {
   width: 100%;
   height: auto;
+}
+
+.services, .clients {
+  max-width: 275px;
+  float: left;
+}
+
+.clients {
+  clear: both;
+}
+
+.about .grid h3 {
+  margin: 20px 0 4px;
+  border-bottom: 1px solid black;
+  display: inline-block;
+  color: #424141;
+  font-size: 16px
 }
 
 @media screen and (max-width: 767px) {
@@ -288,18 +334,23 @@ a, a:visited {
     min-width: 320px;
   }
 
-  .project a {
-    left: 0 !important;
-    width: 100% !important;
-  }
-
   .project .project-title {
     opacity: 1;
   }
 
-  .grid .project {
+  .home .grid .project {
     max-width: 100%;
-    margin: 2% 0;
+    margin: 2% 0 30px 0;
+    width: 100%;
+  }
+
+  .home .grid .project a {
+    left: 0 !important;
+    width: 100% !important;
+  }
+
+  .home .grid .project a img {
+    width: 100%;
   }
 
   .hero-container {
@@ -309,6 +360,13 @@ a, a:visited {
   .section-container {
     padding: 60px 20px;
   }
+
+  .headshot {
+    width: 60%;
+    margin: 40px 15% 140px 25%;
+  }
+
+
 }
 
 @media screen and (max-width: 400px) {
